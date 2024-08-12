@@ -1,0 +1,1411 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="input.css" />
+    <title>Bookle</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Moon Dance"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+
+    <div class="nav h-auto z-50 md:z-0 bg-white flex relative">
+      <div class="head w-full bg-[#036280] pt-[10px] pb-[10px] flex justify-center md:flex-row flex-col">
+        <div class="container mx-auto">
+          <div class="wrapper-top w-full flex justify-end">
+            <ul class="flex md:flex-row flex-col justify-center items-end w-full gap-8 md:items-center md:justify-end">
+              <li>
+                <i class="fa-solid fa-phone text-white"></i>
+                <a class="text-white" href="">+282-222222-22</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-envelope text-white"></i>
+                <a class="text-white" href="">info@example.com</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-clock text-white"></i>
+                <span class="text-white" href=""
+                  >Sunday - Fri: 9 aM - 6 pM</span>
+              </li>
+              <li>
+                <i class="fa-solid fa-comments text-white"></i>
+                <a class="text-white" href="">Live Chat</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-user text-white"></i>
+                <button class="text-white">Login</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="wrapper-btm bg-white flex w-full absolute mt-16 pt-6 pb-[31px] items-center flex-col md:flex-row">
+        <div class="logo bg-[#012e4a] w-72 border"></div>
+        <div class="container"><div class="itms flex items-center justify-center w-full">
+          <ul class="flex gap-8 font-normal text-[#012e4a] text-[18px] md:flex-row flex-col">
+            <li class="relative group cursor-pointer hover:text-[#FF6500]">
+              Home <i class="fa-solid fa-angle-down"></i>
+              <ul class="submenu bg-white absolute hidden group-hover:block top-[60px] text-[16px] font-medium text-[#012e4a] z-[60] w-[240px] text-start px-[10px] py-[10px] border-[1px]">
+                <li class="hover:bg-[#FF6500] hover:text-white py-2 border-b-2"><a href="">Home 01</a></li>
+                <li class="hover:bg-[#FF6500] hover:text-white py-2"><a href="">Home 02</a></li>
+              </ul>
+            </li>
+             <li class="relative group cursor-pointer hover:text-[#FF6500]">
+              Shop <i class="fa-solid fa-angle-down"></i>
+              <ul class="submenu bg-white absolute hidden group-hover:block top-[60px] text-[16px] font-medium text-[#012e4a] z-[60] w-[240px] text-start px-[10px] py-[10px] border-[1px]">
+                <li class="hover:bg-[#FF6500] hover:text-white py-2 border-b-2"><a href="">Shop 01</a></li>
+                <li class="hover:bg-[#FF6500] hover:text-white py-2"><a href="">Shop 02</a></li>
+              </ul>
+            </li>
+            <li class="relative group cursor-pointer hover:text-[#FF6500]">
+              Pages <i class="fa-solid fa-angle-down"></i>
+              <ul class="submenu bg-white absolute hidden group-hover:block top-[60px] text-[16px] font-medium text-[#012e4a] z-[999] w-[240px] text-start px-[10px] py-[10px] border-[1px]">
+                <li class="hover:bg-[#FF6500] hover:text-white py-2 border-b-2"><a href="">Page 01</a></li>
+                <li class="hover:bg-[#FF6500] hover:text-white py-2 border-b-2"><a href="">Page 02</a></li>
+                <li class="hover:bg-[#FF6500] hover:text-white py-2 border-b-2"><a href="">Page 03</a></li>
+                <li class="hover:bg-[#FF6500] hover:text-white py-2"><a href="">Page 04</a></li>
+    
+              </ul>
+            </li>
+            <li class="relative group cursor-pointer hover:text-[#FF6500]">
+              Blog <i class="fa-solid fa-angle-down"></i>
+              <ul class="submenu bg-white absolute hidden group-hover:block top-[60px] text-[16px] font-medium text-[#012e4a] z-[999] w-[240px] text-start px-[10px] py-[10px] border-[1px]">
+                <li class="hover:bg-[#FF6500] hover:text-white py-2 border-b-2"><a href="">Blog 01</a></li>
+                <li class="hover:bg-[#FF6500] hover:text-white py-2 border-b-2"><a href="">Blog 02</a></li>
+                <li class="hover:bg-[#FF6500] hover:text-white py-2 border-b-2"><a href="">Blog 03</a></li>
+                <li class="hover:bg-[#FF6500] hover:text-white py-2"><a href="">Blog 04</a></li>
+    
+              </ul>
+            </li>
+            <li class="cursor-pointer hover:text-[#FF6500]">Contact</li>
+            
+          </ul>
+        </div>
+      </div>
+        
+        <div class="menu-cart flex items-center justify-start gap-4 pr-10">
+          <div
+            class="flex relative cursor-pointer justify-center items-center border rounded-full border-gray-500 h-12 w-12">
+            <span
+              class="flex absolute justify-center items-center h-4 w-4 rounded-full -top-1 left-0 bg-[#036280] text-white">0</span><a href=""><i class="fa-regular fa-heart"></i></a>
+          </div>
+    
+          <div
+            class="flex relative cursor-pointer justify-center items-center border rounded-full border-gray-500 h-12 w-12">
+            <span
+              class="flex absolute justify-center items-center h-4 w-4 rounded-full -top-1 left-0 bg-[#036280] text-white">0</span><a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+          </div>
+    
+          <div
+            class="flex cursor-pointer justify-center items-center border rounded-full border-gray-500 h-12 w-12">
+            <button id="openSidebarButton"><img src="bar.svg" alt=""/></button>
+          </div>
+          
+        </div>
+      </div>
+      <div
+        class="flex items-center justify-end p-4 absolute top-0 rounded-tr-[5rem] bg-[#012e4a] border-l border-t-0 border-white border-[10px] w-72 h-[167px]"
+      >
+        <div><a href=""><img class=" " src="logo.svg" alt="" /></a></div>
+      </div>
+    </div>
+    <div class="sec1 relative flex h-auto pt-[730px] mt-[180px] md:mt-[100px] w-full bg-[#d0e1e7]">
+
+      <div class="container flex w-[80%] mx-auto z-10">
+        <div class="flex-col absolute top-52 left-32 md:z-30">
+          <div class="text1">
+            <h1 class="h1 text-[#FF6500] text-[20px] font-normal md:text-[32px]">
+              Up To 30% Off
+            </h1>
+          </div>
+          <div class="text2 md:z-30">
+            <h1 class="h2 font-bold text-[#012e4a] md:text-[67px] text-[30px]">
+              Get Your New Book <br />
+              With The Best Price
+            </h1>
+          </div>
+          <div class="btn">
+            <button
+              class="bg-[#036280] hover:bg-[#FF6500] h-[50px] w-[170px] rounded-full text-white font-bold">
+              Shop Now <i class="fa-solid fa-arrow-right-long"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="absolute top-0 md:left-[415px] left-0">
+        <div class="main relative">
+          <div class="absolute top-0 md:left-52 z-10 left-0">
+            <div class="h-30 w-[600px]">
+              <img src="bg-shape.png" alt="" class="w-full" />
+            </div>
+          </div>
+          <div class="frame absolute top-0 md:left-[5.5rem] z-0 animate-moveLeftRight left-0">
+            <div class="w-[250px]">
+              <img src="frame.png" alt="" class="w-full" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="girl absolute right-[10px] animate-moveLeftRight md:z-10 bottom-0 z-0">
+        <div class="h-auto w-[520px]"><img src="hero-girl.png" alt="" /></div>
+      </div>
+      <div class="books absolute bottom-0">
+        <img src="book.png" alt="" />
+      </div>
+      <div class="btmframe absolute bottom-0 left-[34rem] animate-moveTopBottom">
+        <img src="frame.png" alt="" />
+      </div>
+      <div class="star absolute md:top-[240px] md:left-[39rem] animate-spinStar left-[20rem] top-[200px]">
+        <img src="xstar.png" alt="" />
+      </div>
+      <div class="plane absolute top-[340px] md:left-[39rem] z-0 animate-moveLeftRight left-[5rem]">
+        <img src="frame-shape.png" alt="" />
+      </div>
+    </div>
+    <div class="feature p-[100px]">
+      <div class="container w-ful">
+        <div
+          class="wrapper grid md:grid-cols-2 gap-5 pl-[100px] py-11 bg-[#d0e1e7] rounded-2xl grid-cols-1"
+        >
+          <div class="fboxitem flex gap-4">
+            <div
+              class="icon bg-[#036280] rounded-lg h-[84px] w-[84px] flex justify-center items-center"
+            >
+              <i class="fa-solid fa-truck text-white"></i>
+            </div>
+            <div class="content">
+              <h3 class="font-bold text-[27px] text-[#012e4a]">
+                Return & refund
+              </h3>
+              <p class="text-[16px] text-[#4f536c] font-medium">
+                Money back guarantee
+              </p>
+            </div>
+          </div>
+
+          <div class="fboxitem flex gap-4">
+            <div
+              class="icon bg-[#036280] rounded-lg h-[84px] w-[84px] flex justify-center items-center"
+            >
+              <i class="fa-solid fa-shield text-white"></i>
+            </div>
+            <div class="content">
+              <h3 class="font-bold text-[27px] text-[#012e4a]">
+                Secure Payment
+              </h3>
+              <p class="text-[16px] text-[#4f536c] font-medium">
+                30% off by subscribing
+              </p>
+            </div>
+          </div>
+          <div class="fboxitem flex gap-4">
+            <div
+              class="icon bg-[#036280] rounded-lg h-[84px] w-[84px] flex justify-center items-center"
+            >
+              <i class="fa-solid fa-headset text-white"></i>
+            </div>
+            <div class="content">
+              <h3 class="font-bold text-[27px] text-[#012e4a]">
+                Quality Support
+              </h3>
+              <p class="text-[16px] text-[#4f536c] font-medium">
+                Always online 24/7
+              </p>
+            </div>
+          </div>
+          <div class="fboxitem flex gap-4">
+            <div
+              class="icon bg-[#036280] rounded-lg h-[84px] w-[84px] flex justify-center items-center"
+            >
+              <i class="fa-solid fa-tags text-white"></i>
+            </div>
+            <div class="content">
+              <h3 class="font-bold text-[27px] text-[#012e4a]">Daily Offers</h3>
+              <p class="text-[16px] text-[#4f536c] font-medium">
+                20% off by subscribing
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="shop">
+      <div class="container w-[80%] mx-auto">
+        <div
+          class="title-area flex relative items-center justify-between">
+          <div class="title">
+            <h2 class="text-[#012e4a] font-bold text-[40px]">Featured Books</h2>
+          </div>
+          <a
+            href=""
+            class="text-[#4f536c] w-[200px] rounded-[100px] border border-[rgb(98,112,126,0.3)] py-[15px] text-center text-base font-bold hover:bg-[#FF6500] hover:text-white"
+            >Explore More <i class="fa-solid fa-arrow-right-long"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="py-[100px] flex gap-12 justify-center flex-wrap md:flex-nowrap">
+      <div class="f w-[352px]">
+        <div class="swrapper w-full">
+          <div class="first bg-[#f5f5f5] rounded-xl">
+            <div class="card1">
+              <div class="img p-[30px] flex justify-center">
+                <img src="01.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content mt-5 text-[#4f536c] text-base font-normal">
+          <h5 class="mb-1">Design Low Book</h5>
+          <h3
+            class="text-[#012e4a] text-[18px] mb-1 font-bold hover:text-[#FF6500]"
+          >
+            <a href=""
+              >The Hidden Mystrey <br />
+              Behind</a
+            >
+          </h3>
+          <ul class="flex justify-start mt-3">
+            <li class="text-[16px] font-bold text-[#FF6500]">$29.00</li>
+          </ul>
+          <ul class="flex items-center justify-between mt-4">
+            <li class="flex items-center gap-3">
+              <span><img src="client-1.png" alt="" /></span>
+              <span class="font-medium text-sm">Hawkins</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-star text-[#FF6500]"></i>
+              <i class="fa-solid fa-star text-[#FF6500]"></i>
+              <i class="fa-solid fa-star text-[#FF6500]"></i>
+              <i class="fa-solid fa-star text-[#FF6500]"></i>
+              <i class="fa-regular fa-star text-[#FF6500]"></i>
+            </li>
+          </ul>
+        </div>
+        <div class="btn mt-8">
+          <a
+            href=""
+            class="flex justify-center items-center py-[20px] px-[40px] rounded-[100px] font-bold text-base bg-[#d0e1e7] text-[#036280] hover:bg-[#FF6500] hover:text-white"
+            ><i class="fa-solid fa-basket-shopping"></i>Add To Cart</a
+          >
+        </div>
+      </div>
+
+      <div class="s w-[352px]">
+        <div class="swrapper w-full">
+          <div class="second bg-[#f5f5f5] rounded-xl">
+            <div class="card2">
+              <div class="img p-[30px] flex justify-center">
+                <img src="02.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content mt-5 text-[#4f536c] text-base font-normal">
+          <h5 class="mb-1">Design Low Book</h5>
+          <h3
+            class="text-[#012e4a] text-[18px] mb-1 font-bold hover:text-[#FF6500]"
+          >
+            <a href=""
+              >The Hidden Mystrey <br />
+              Behind</a
+            >
+          </h3>
+          <ul class="flex justify-start mt-3">
+            <li class="text-[16px] font-bold text-[#FF6500]">$29.00</li>
+          </ul>
+          <ul class="flex items-center justify-between mt-4">
+            <li class="flex items-center gap-3">
+              <span><img src="client-1.png" alt="" /></span>
+              <span class="font-medium text-sm">Hawkins</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-star text-[#FF6500]"></i>
+              <i class="fa-solid fa-star text-[#FF6500]"></i>
+              <i class="fa-solid fa-star text-[#FF6500]"></i>
+              <i class="fa-solid fa-star text-[#FF6500]"></i>
+              <i class="fa-regular fa-star text-[#FF6500]"></i>
+            </li>
+          </ul>
+        </div>
+        <div class="btn mt-8">
+          <a
+            href=""
+            class="flex justify-center items-center py-[20px] px-[40px] rounded-[100px] font-bold text-base bg-[#d0e1e7] text-[#036280] hover:bg-[#FF6500] hover:text-white"
+            ><i class="fa-solid fa-basket-shopping"></i>Add To Cart</a
+          >
+        </div>
+      </div>
+
+      <div class="t w-[352px]">
+        <div class="swrapper w-full">
+          <div class="third bg-[#f5f5f5] rounded-xl">
+            <div class="card3">
+              <div class="img p-[30px] flex justify-center">
+                <img src="03.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content mt-4 text-[#4f536c] text-base font-normal">
+          <h5 class="mb-0">Design Low Book</h5>
+          <h3
+            class="text-[#012e4a] text-[18px] mb-1 font-bold hover:text-[#FF6500]"
+          >
+            <a href=""
+              >The Hidden Mystrey <br />
+              Behind</a
+            >
+          </h3>
+          <ul class="flex justify-start mt-3">
+            <li class="text-[16px] font-bold text-[#FF6500]">$29.00</li>
+          </ul>
+          <ul class="flex items-center justify-between mt-4">
+            <li class="flex items-center gap-3">
+              <span><img src="client-1.png" alt="" /></span>
+              <span class="font-medium text-sm">Hawkins</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-star text-[#FF6500]"></i>
+              <i class="fa-solid fa-star text-[#FF6500]"></i>
+              <i class="fa-solid fa-star text-[#FF6500]"></i>
+              <i class="fa-solid fa-star text-[#FF6500]"></i>
+              <i class="fa-regular fa-star text-[#FF6500]"></i>
+            </li>
+          </ul>
+        </div>
+        <div class="btn mt-8">
+          <a
+            href=""
+            class="flex justify-center items-center py-[20px] px-[40px] rounded-[100px] font-bold text-base bg-[#d0e1e7] text-[#036280] hover:bg-[#FF6500] hover:text-white"
+            ><i class="fa-solid fa-basket-shopping"></i>Add To Cart</a
+          >
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="hero bg-[#d0e1e7] pt-[100px] pb-[120px] px-[120px] flex justify-center">
+      <div class="container border-2 border-[#036280] rounded-xl pb-10 relative">
+        <div class="row relative">
+          <div class="heading absolute top-[-35px] transform md:translate-x-[80%] translate-x-[20%]"><h2 class="text-[40px] text-[#012e4a] bg-[#d0e1e7] font-bold text-center">Top Categories Book</h2></div>
+          <div class="pt-[45px] relative">
+            <div class="main flex md:gap-4 justify-center flex-wrap md:flex-nowrap gap-7">
+              <div class="bg-white h-[245px] w-[245px] flex items-center justify-center rounded-full relative"><img src="011.png" alt="" /><span class="absolute top-5 right-12 bg-[#012e4a] text-white font-bold rounded-full h-[25px] w-[25px] text-center">03</span>
+            <div class="circle absolute top-2 left-[6px] animate-spinCircle"><img src="circle-shape.png" alt=""></div>
+              </div>
+              <div class="bg-white h-[245px] w-[245px] flex items-center justify-center rounded-full relative"><img src="022.png" alt="" /><span class="absolute top-5 right-12 bg-[#012e4a] text-white font-bold rounded-full h-[25px] w-[25px] text-center">03</span>
+                <div class="circle absolute top-2 left-[6px] animate-spinCircle"><img src="circle-shape.png" alt=""></div>
+              </div>
+
+              <div class="bg-white h-[245px] w-[245px] flex items-center justify-center rounded-full relative"><img src="033.png" alt="" /><span class="absolute top-5 right-12 bg-[#012e4a] text-white font-bold rounded-full h-[25px] w-[25px] text-center">03</span>
+                <div class="circle absolute top-2 left-[6px] animate-spinCircle"><img src="circle-shape.png" alt=""></div>
+              </div>
+
+              <div class="bg-white h-[245px] w-[245px] flex items-center justify-center rounded-full relative"><img src="044.png" alt="" /><span class="absolute top-5 right-12 bg-[#012e4a] text-white font-bold rounded-full h-[25px] w-[25px] text-center">03</span>
+                <div class="circle absolute top-2 left-[6px] animate-spinCircle"><img src="circle-shape.png" alt=""></div>
+              </div>
+            </div>
+          </div>
+          <div class="scd flex justify-between items-center pl-[6.25rem] pr-[5rem] mt-5">
+            <div class=""><h3 class="font-bold text-[18px] text-[#012e4a]"><a href="">Safe Home (5)</a></h3></div>
+            <div><h3 class="font-bold text-[18px] text-[#012e4a]"><a href="">Grow Flower (20)</a></h3></div>
+            <div><h3 class="font-bold text-[18px] text-[#012e4a]"><a href="">Adventure Book (4)</a></h3></div>
+            <div><h3 class="font-bold text-[18px] text-[#012e4a]"><a href="">Romance Books (80)</a></h3></div>
+          </div>
+        </div>
+      <div class="leftarrow absolute top-[42%] left-[-30px] h-[65px] w-[65px] bg-[#036280] flex justify-center items-center text-white border-2 border-white rounded-full hover:bg-[#FF6650] cursor-pointer"><i class="fa-solid fa-arrow-left"></i></div>
+      <div class="leftarrow absolute top-[42%] right-[-30px] h-[65px] w-[65px] bg-[#036280] flex justify-center items-center text-white border-2 border-white rounded-full hover:bg-[#FF6650] cursor-pointer"><i class="fa-solid fa-arrow-right"></i></div>
+      </div>
+    </div>
+
+    <div class="topbooks py-[100px]">
+    <div class="shop">
+      <div class="container w-[80%] mx-auto">
+        <div
+          class="title-area flex w-full relative items-center justify-between"
+        >
+          <div class="title">
+            <h2 class="text-[#012e4a] font-bold text-[40px]">Book Top Books</h2>
+          </div>
+          <a
+            href=""
+            class="text-[#4f536c] w-[200px] rounded-[100px] border border-[rgb(98,112,126,0.3)] py-[15px] text-center text-base font-bold hover:bg-[#FF6500] hover:text-white"
+            >Explore More <i class="fa-solid fa-arrow-right-long"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="pt-[100px] flex gap-12 justify-center w-[80%] mx-auto flex-wrap md:flex-nowrap">
+      <div class="f w-[352px]">
+        <div class="swrapper w-full">
+          <div class="first bg-[#f5f5f5] rounded-xl">
+            <div class="card1">
+              <div class="img p-[30px] flex justify-center">
+                <img src="01.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content mt-5 text-[#4f536c] text-base font-normal">
+          <h5 class="mb-1">Design Low Book</h5>
+          <h3
+            class="text-[#012e4a] text-[18px] mb-1 font-bold hover:text-[#FF6500]"
+          >
+            <a href=""
+              >The Hidden Mystrey <br />
+              Behind</a
+            >
+          </h3>
+          <ul class="flex gap-3 justify-start mt-3">
+            <li class="text-[16px] font-bold text-[#FF6500]"><span>$29.00</span></li>
+            <li><span class="font-mediumtext-[#5c707e] text line-through">$33.99</span></li>
+          </ul>
+          <ul class="flex items-center justify-between mt-4">
+            <li class="flex items-center gap-3">
+              <span><img src="client-1.png" alt="" /></span>
+              <span class="font-medium text-sm">Hawkins</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-star text-[#FF6500]"></i>
+              <i class="fa-solid fa-star text-[#FF6500]"></i>
+              <i class="fa-solid fa-star text-[#FF6500]"></i>
+              <i class="fa-solid fa-star text-[#FF6500]"></i>
+              <i class="fa-regular fa-star text-[#FF6500]"></i>
+            </li>
+          </ul>
+        </div>
+        <div class="btn mt-8">
+          <a
+            href=""
+            class="flex justify-center items-center py-[20px] px-[40px] rounded-[100px] font-bold text-base bg-[#d0e1e7] text-[#036280] hover:bg-[#FF6500] hover:text-white"
+            ><i class="fa-solid fa-basket-shopping"></i>Add To Cart</a
+          >
+        </div>
+      </div>
+
+      <div class="s w-[352px]">
+        <div class="swrapper w-full">
+          <div class="second bg-[#f5f5f5] rounded-xl">
+            <div class="card2">
+              <div class="img p-[30px] flex justify-center">
+                <img src="02.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content mt-5 text-[#4f536c] text-base font-normal">
+          <h5 class="mb-1">Design Low Book</h5>
+          <h3
+            class="text-[#012e4a] text-[18px] mb-1 font-bold hover:text-[#FF6500]"
+          >
+            <a href=""
+              >The Hidden Mystrey <br />
+              Behind</a
+            >
+          </h3>
+          <ul class="flex gap-3 justify-start mt-3">
+            <li class="text-[16px] font-bold text-[#FF6500]">$29.00</li>
+            <li><span class="font-mediumtext-[#5c707e] text line-through">$33.99</span></li>
+
+          </ul>
+          <ul class="flex items-center justify-between mt-4">
+            <li class="flex items-center gap-3">
+              <span><img src="client-1.png" alt="" /></span>
+              <span class="font-medium text-sm">Hawkins</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-star text-[#FF6500]"></i>
+              <i class="fa-solid fa-star text-[#FF6500]"></i>
+              <i class="fa-solid fa-star text-[#FF6500]"></i>
+              <i class="fa-solid fa-star text-[#FF6500]"></i>
+              <i class="fa-regular fa-star text-[#FF6500]"></i>
+            </li>
+          </ul>
+        </div>
+        <div class="btn mt-8">
+          <a
+            href=""
+            class="flex justify-center items-center py-[20px] px-[40px] rounded-[100px] font-bold text-base bg-[#d0e1e7] text-[#036280] hover:bg-[#FF6500] hover:text-white"
+            ><i class="fa-solid fa-basket-shopping"></i>Add To Cart</a
+          >
+        </div>
+      </div>
+
+      <div class="t w-[352px]">
+        <div class="swrapper w-full">
+          <div class="third bg-[#f5f5f5] rounded-xl">
+            <div class="card3">
+              <div class="img p-[30px] flex justify-center">
+                <img src="03.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content mt-4 text-[#4f536c] text-base font-normal">
+          <h5 class="mb-0">Design Low Book</h5>
+          <h3
+            class="text-[#012e4a] text-[18px] mb-1 font-bold hover:text-[#FF6500]"
+          >
+            <a href=""
+              >The Hidden Mystrey <br />
+              Behind</a
+            >
+          </h3>
+          <ul class="flex gap-3 justify-start mt-3">
+            <li class="text-[16px] font-bold text-[#FF6500]">$29.00</li>
+            <li><span class="font-mediumtext-[#5c707e] text line-through">$33.99</span></li>
+
+          </ul>
+          <ul class="flex items-center justify-between mt-4">
+            <li class="flex items-center gap-3">
+              <span><img src="client-1.png" alt="" /></span>
+              <span class="font-medium text-sm">Hawkins</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-star text-[#FF6500]"></i>
+              <i class="fa-solid fa-star text-[#FF6500]"></i>
+              <i class="fa-solid fa-star text-[#FF6500]"></i>
+              <i class="fa-solid fa-star text-[#FF6500]"></i>
+              <i class="fa-regular fa-star text-[#FF6500]"></i>
+            </li>
+          </ul>
+        </div>
+        <div class="btn mt-8">
+          <a
+            href=""
+            class="flex justify-center items-center py-[20px] px-[40px] rounded-[100px] font-bold text-base bg-[#d0e1e7] text-[#036280] hover:bg-[#FF6500] hover:text-white"
+            ><i class="fa-solid fa-basket-shopping"></i>Add To Cart</a
+          >
+        </div>
+      </div>
+      <div class="t w-[352px]">
+        <div class="swrapper w-full">
+          <div class="third bg-[#f5f5f5] rounded-xl">
+            <div class="card3">
+              <div class="img p-[30px] flex justify-center">
+                <img src="03.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content mt-4 text-[#4f536c] text-base font-normal">
+          <h5 class="mb-0">Design Low Book</h5>
+          <h3
+            class="text-[#012e4a] text-[18px] mb-1 font-bold hover:text-[#FF6500]"
+          >
+            <a href=""
+              >The Hidden Mystrey <br />
+              Behind</a
+            >
+          </h3>
+          <ul class="flex gap-3 justify-start mt-3">
+            <li class="text-[16px] font-bold text-[#FF6500]">$29.00</li>
+            <li><span class="font-mediumtext-[#5c707e] text line-through">$33.99</span></li>
+
+          </ul>
+          <ul class="flex items-center justify-between mt-4">
+            <li class="flex items-center gap-3">
+              <span><img src="client-1.png" alt="" /></span>
+              <span class="font-medium text-sm">Hawkins</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-star text-[#FF6500]"></i>
+              <i class="fa-solid fa-star text-[#FF6500]"></i>
+              <i class="fa-solid fa-star text-[#FF6500]"></i>
+              <i class="fa-solid fa-star text-[#FF6500]"></i>
+              <i class="fa-regular fa-star text-[#FF6500]"></i>
+            </li>
+          </ul>
+        </div>
+        <div class="btn mt-8">
+          <a
+            href=""
+            class="flex justify-center items-center py-[20px] px-[40px] rounded-[100px] font-bold text-base bg-[#d0e1e7] text-[#036280] hover:bg-[#FF6500] hover:text-white"
+            ><i class="fa-solid fa-basket-shopping"></i>Add To Cart</a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="cta flex w-[80%] mx-auto pb-[100px] justify-center md:justify-start">
+    <div class="hd bg-[#036280] w-[250px] rounded-xl p-[1.9rem]">
+    <h2 class="text-[36px] text-white font-bold mb-5">Find Your <br> Nest <br> Books!</h2>
+    <h6 class=" text-white font-medium mb-[40px]">And Get Your 25% Discount Now!</h6>
+    <a href="" class="font-bold text-[#4f536c] py-[16px] px-[30px] bg-white rounded-[100px] hover:bg-[#FF6500] hover:text-white">Shop Now <i class="fa-solid fa-arrow-right-long"></i></a>
+    </div>
+  </div>
+  <div class="banner pb-[100px]">
+    <div class="container w-[80%] mx-auto">
+      <div class="wrapper relative py-[100px] bg-[url('cta-banner.jpg')] bg-cover bg-center rounded-tr-[30px] rounded-br-[30px] rounded-bl-[30px]">
+        <div class="book absolute top-0 bottom-0 left-0"><img src="book-shape.png" alt="" class="h-[100%]"></div>
+        <div class="girl absolute bottom-0 right-0"><img src="girl-shape-2.png" alt="" class=""></div>
+        <div class="content text-center flex flex-col justify-center items-center">
+          <h2 class="font-bold text-[40px] text-[#036280] z-10 mb-16" >Get 25% discount in all <br>
+            kind of super Selling</h2>
+            <button class="cursor-pointer w-[200px] font-bold text-white py-[16px] px-[30px] bg-[#036280] rounded-[100px] z-10 hover:bg-[#FF6500] hover:text-white">Shop Now <i class="fa-solid fa-arrow-right-long"></i></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="topctgry py-[100px] bg-[#d0e1e7]">
+    <div class="container w-[80%] mx-auto">
+      <div class="wrapper bg-white py-[40px] px-[35px] rounded-2xl">
+        <div class="sec-title mb-4 flex items-center justify-between relative ">
+          <div class="title">
+            <h2 class="text-[#012e4a] text-[25px] font-bold">Top Rating Books</h2>
+          </div>
+          <button class="cursor-pointer w-[200px] font-bold text-[#4f536c] py-[16px] px-[30px] bg-[#ffff] rounded-[100px] border-[1px] border-[#5c707e4d] z-10 hover:bg-[#FF6500] hover:text-white">View More <i class="fa-solid fa-arrow-right-long"></i></button>
+        </div>
+        <div class="row grid md:grid-cols-2 gap-4 grid-cols-1">
+          <div class="col">
+            <div class="box flex gap-[16px] items-center p-[25px] border-[1px] border-[#5c707e4d] rounded-2xl">
+              <div class="bthumb bg-[#f5f5f5] w-[104px] py-[15px] px-[20px] rounded-lg"><img src="0111.png" alt=""></div>
+              <div class="content">
+                <div class="title flex items-center justify-between gap-3">
+                  <div>
+                    <h5 class="text-[#4f536c] text-[15px] font-normal">Design Low Book</h5>
+                    <h3 class="text-[#012e4a] text-[18px] font-bold mb-2"><a href=""></a>Simple Things You To <br> Save BOOK</h3>
+                  </div>
+                  <ul class="flex items-center justify-center gap-2">
+                    <li class="hover:bg-[#FF6500] hover:text-white flex justify-center items-center w-[40px] h-[40px] border-[1px] border-[#5c707e4d] rounded-full text-[#012e4a]"><a href=""><i class="far fa-heart"></i></a></li>
+                    <li class="hover:bg-[#FF6500] hover:text-white flex justify-center items-center w-[40px] h-[40px] border-[1px] border-[#5c707e4d] rounded-full ext-[#012e4a]"><a href=""><img src="arrow.svg" alt=""></i></a></li>
+                    <li class="hover:bg-[#FF6500] hover:text-white flex justify-center items-center w-[40px] h-[40px] border-[1px] border-[#5c707e4d] rounded-full text-[#012e4a]"><a href=""><i class="far fa-eye"></i></a></li>
+
+                  </ul>
+                </div>
+                <span class="mt-3 text-[#036280] font-bold">$30.00</span>
+                <div class="flex gap-3 mt-[10px]">
+                  <div class="img"><img src="client-1.png" alt=""></div>
+                  <span>Hawkins</span>
+                </div>
+                <div class="flex flex-row justify-between items-center">
+                  <div class="star flex gap-1 mt-[10px] text-[#FF6500]">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </div>
+                  <a href="" class="text-[#036280] bg-[#d0e1e7] py-[10px] px-[30px] rounded-[100px] font-bold hover:bg-[#FF6500] hover:text-[#ffff]"><i class="fa-solid fa-basket-shopping"></i>Add To Cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="box flex gap-[16px] items-center p-[25px] border-[1px] border-[#5c707e4d] rounded-2xl">
+              <div class="bthumb bg-[#f5f5f5] w-[104px] py-[15px] px-[20px] rounded-lg"><img src="0111.png" alt=""></div>
+              <div class="content">
+                <div class="title flex items-center justify-between gap-3">
+                  <div>
+                    <h5 class="text-[#4f536c] text-[15px] font-normal">Design Low Book</h5>
+                    <h3 class="text-[#012e4a] text-[18px] font-bold mb-2"><a href=""></a>Simple Things You To <br> Save BOOK</h3>
+                  </div>
+                  <ul class="flex items-center justify-center gap-2">
+                    <li class="hover:bg-[#FF6500] hover:text-white flex justify-center items-center w-[40px] h-[40px] border-[1px] border-[#5c707e4d] rounded-full text-[#012e4a]"><a href=""><i class="far fa-heart"></i></a></li>
+                    <li class="hover:bg-[#FF6500] hover:text-white flex justify-center items-center w-[40px] h-[40px] border-[1px] border-[#5c707e4d] rounded-full ext-[#012e4a]"><a href=""><img src="arrow.svg" alt=""></i></a></li>
+                    <li class="hover:bg-[#FF6500] hover:text-white flex justify-center items-center w-[40px] h-[40px] border-[1px] border-[#5c707e4d] rounded-full text-[#012e4a]"><a href=""><i class="far fa-eye"></i></a></li>
+
+                  </ul>
+                </div>
+                <span class="mt-3 text-[#036280] font-bold">$30.00</span>
+                <div class="flex gap-3 mt-[10px]">
+                  <div class="img"><img src="client-1.png" alt=""></div>
+                  <span>Hawkins</span>
+                </div>
+                <div class="flex flex-row justify-between items-center">
+                  <div class="star flex gap-1 mt-[10px] text-[#FF6500]">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </div>
+                  <a href="" class="text-[#036280] bg-[#d0e1e7] py-[10px] px-[30px] rounded-[100px] font-bold hover:bg-[#FF6500] hover:text-[#ffff]"><i class="fa-solid fa-basket-shopping"></i>Add To Cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="box flex gap-[16px] items-center p-[25px] border-[1px] border-[#5c707e4d] rounded-2xl">
+              <div class="bthumb bg-[#f5f5f5] w-[104px] py-[15px] px-[20px] rounded-lg"><img src="0111.png" alt=""></div>
+              <div class="content">
+                <div class="title flex items-center justify-between gap-3">
+                  <div>
+                    <h5 class="text-[#4f536c] text-[15px] font-normal">Design Low Book</h5>
+                    <h3 class="text-[#012e4a] text-[18px] font-bold mb-2"><a href=""></a>Simple Things You To <br> Save BOOK</h3>
+                  </div>
+                  <ul class="flex items-center justify-center gap-2">
+                    <li class="hover:bg-[#FF6500] hover:text-white flex justify-center items-center w-[40px] h-[40px] border-[1px] border-[#5c707e4d] rounded-full text-[#012e4a]"><a href=""><i class="far fa-heart"></i></a></li>
+                    <li class="hover:bg-[#FF6500] hover:text-white flex justify-center items-center w-[40px] h-[40px] border-[1px] border-[#5c707e4d] rounded-full ext-[#012e4a]"><a href=""><img src="arrow.svg" alt=""></i></a></li>
+                    <li class="hover:bg-[#FF6500] hover:text-white flex justify-center items-center w-[40px] h-[40px] border-[1px] border-[#5c707e4d] rounded-full text-[#012e4a]"><a href=""><i class="far fa-eye"></i></a></li>
+
+                  </ul>
+                </div>
+                <span class="mt-3 text-[#036280] font-bold">$30.00</span>
+                <div class="flex gap-3 mt-[10px]">
+                  <div class="img"><img src="client-1.png" alt=""></div>
+                  <span>Hawkins</span>
+                </div>
+                <div class="flex flex-row justify-between items-center">
+                  <div class="star flex gap-1 mt-[10px] text-[#FF6500]">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </div>
+                  <a href="" class="text-[#036280] bg-[#d0e1e7] py-[10px] px-[30px] rounded-[100px] font-bold hover:bg-[#FF6500] hover:text-[#ffff]"><i class="fa-solid fa-basket-shopping"></i>Add To Cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="box flex gap-[16px] items-center p-[25px] border-[1px] border-[#5c707e4d] rounded-2xl">
+              <div class="bthumb bg-[#f5f5f5] w-[104px] py-[15px] px-[20px] rounded-lg"><img src="0111.png" alt=""></div>
+              <div class="content">
+                <div class="title flex items-center justify-between gap-3">
+                  <div>
+                    <h5 class="text-[#4f536c] text-[15px] font-normal">Design Low Book</h5>
+                    <h3 class="text-[#012e4a] text-[18px] font-bold mb-2"><a href=""></a>Simple Things You To <br> Save BOOK</h3>
+                  </div>
+                  <ul class="flex items-center justify-center gap-2">
+                    <li class="hover:bg-[#FF6500] hover:text-white flex justify-center items-center w-[40px] h-[40px] border-[1px] border-[#5c707e4d] rounded-full text-[#012e4a]"><a href=""><i class="far fa-heart"></i></a></li>
+                    <li class="hover:bg-[#FF6500] hover:text-white flex justify-center items-center w-[40px] h-[40px] border-[1px] border-[#5c707e4d] rounded-full ext-[#012e4a]"><a href=""><img src="arrow.svg" alt=""></i></a></li>
+                    <li class="hover:bg-[#FF6500] hover:text-white flex justify-center items-center w-[40px] h-[40px] border-[1px] border-[#5c707e4d] rounded-full text-[#012e4a]"><a href=""><i class="far fa-eye"></i></a></li>
+
+                  </ul>
+                </div>
+                <span class="mt-3 text-[#036280] font-bold">$30.00</span>
+                <div class="flex gap-3 mt-[10px]">
+                  <div class="img"><img src="client-1.png" alt=""></div>
+                  <span>Hawkins</span>
+                </div>
+                <div class="flex flex-row justify-between items-center">
+                  <div class="star flex gap-1 mt-[10px] text-[#FF6500]">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </div>
+                  <a href="" class="text-[#036280] bg-[#d0e1e7] py-[10px] px-[30px] rounded-[100px] font-bold hover:bg-[#FF6500] hover:text-[#ffff]"><i class="fa-solid fa-basket-shopping"></i>Add To Cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="box flex gap-[16px] items-center p-[25px] border-[1px] border-[#5c707e4d] rounded-2xl">
+              <div class="bthumb bg-[#f5f5f5] w-[104px] py-[15px] px-[20px] rounded-lg"><img src="0111.png" alt=""></div>
+              <div class="content">
+                <div class="title flex items-center justify-between gap-3">
+                  <div>
+                    <h5 class="text-[#4f536c] text-[15px] font-normal">Design Low Book</h5>
+                    <h3 class="text-[#012e4a] text-[18px] font-bold mb-2"><a href=""></a>Simple Things You To <br> Save BOOK</h3>
+                  </div>
+                  <ul class="flex items-center justify-center gap-2">
+                    <li class="hover:bg-[#FF6500] hover:text-white flex justify-center items-center w-[40px] h-[40px] border-[1px] border-[#5c707e4d] rounded-full text-[#012e4a]"><a href=""><i class="far fa-heart"></i></a></li>
+                    <li class="hover:bg-[#FF6500] hover:text-white flex justify-center items-center w-[40px] h-[40px] border-[1px] border-[#5c707e4d] rounded-full ext-[#012e4a]"><a href=""><img src="arrow.svg" alt=""></i></a></li>
+                    <li class="hover:bg-[#FF6500] hover:text-white flex justify-center items-center w-[40px] h-[40px] border-[1px] border-[#5c707e4d] rounded-full text-[#012e4a]"><a href=""><i class="far fa-eye"></i></a></li>
+
+                  </ul>
+                </div>
+                <span class="mt-3 text-[#036280] font-bold">$30.00</span>
+                <div class="flex gap-3 mt-[10px]">
+                  <div class="img"><img src="client-1.png" alt=""></div>
+                  <span>Hawkins</span>
+                </div>
+                <div class="flex flex-row justify-between items-center">
+                  <div class="star flex gap-1 mt-[10px] text-[#FF6500]">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </div>
+                  <a href="" class="text-[#036280] bg-[#d0e1e7] py-[10px] px-[30px] rounded-[100px] font-bold hover:bg-[#FF6500] hover:text-[#ffff]"><i class="fa-solid fa-basket-shopping"></i>Add To Cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="box flex gap-[16px] items-center p-[25px] border-[1px] border-[#5c707e4d] rounded-2xl">
+              <div class="bthumb bg-[#f5f5f5] w-[104px] py-[15px] px-[20px] rounded-lg"><img src="0111.png" alt=""></div>
+              <div class="content">
+                <div class="title flex items-center justify-between gap-3">
+                  <div>
+                    <h5 class="text-[#4f536c] text-[15px] font-normal">Design Low Book</h5>
+                    <h3 class="text-[#012e4a] text-[18px] font-bold mb-2"><a href=""></a>Simple Things You To <br> Save BOOK</h3>
+                  </div>
+                  <ul class="flex items-center justify-center gap-2">
+                    <li class="hover:bg-[#FF6500] hover:text-white flex justify-center items-center w-[40px] h-[40px] border-[1px] border-[#5c707e4d] rounded-full text-[#012e4a]"><a href=""><i class="far fa-heart"></i></a></li>
+                    <li class="hover:bg-[#FF6500] hover:text-white flex justify-center items-center w-[40px] h-[40px] border-[1px] border-[#5c707e4d] rounded-full ext-[#012e4a]"><a href=""><img src="arrow.svg" alt=""></i></a></li>
+                    <li class="hover:bg-[#FF6500] hover:text-white flex justify-center items-center w-[40px] h-[40px] border-[1px] border-[#5c707e4d] rounded-full text-[#012e4a]"><a href=""><i class="far fa-eye"></i></a></li>
+
+                  </ul>
+                </div>
+                <span class="mt-3 text-[#036280] font-bold">$30.00</span>
+                <div class="flex gap-3 mt-[10px]">
+                  <div class="img"><img src="client-1.png" alt=""></div>
+                  <span>Hawkins</span>
+                </div>
+                <div class="flex flex-row justify-between items-center">
+                  <div class="star flex gap-1 mt-[10px] text-[#FF6500]">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </div>
+                  <a href="" class="text-[#036280] bg-[#d0e1e7] py-[10px] px-[30px] rounded-[100px] font-bold hover:bg-[#FF6500] hover:text-[#ffff]"><i class="fa-solid fa-basket-shopping"></i>Add To Cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          
+          
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="shop pt-[100px]">
+    <div class="container w-[80%] mx-auto">
+      <div
+        class="title-area flex w-full relative items-center justify-between">
+        <div class="title">
+          <h2 class="text-[#012e4a] font-bold text-[40px]">Top Selling Books</h2>
+        </div>
+        <a
+          href=""
+          class="text-[#4f536c] w-[200px] rounded-[100px] border border-[rgb(98,112,126,0.3)] py-[15px] text-center text-base font-bold hover:bg-[#FF6500] hover:text-white"
+          >Explore More <i class="fa-solid fa-arrow-right-long"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="pt-[40px] pb-[100px] flex gap-12 justify-center flex-wrap md:flex-nowrap">
+    <div class="f w-[352px]">
+      <div class="swrapper w-full">
+        <div class="first bg-[#f5f5f5] rounded-xl">
+          <div class="card1">
+            <div class="img p-[30px] flex justify-center">
+              <img src="01.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="content mt-5 text-[#4f536c] text-base font-normal">
+        <h5 class="mb-1">Design Low Book</h5>
+        <h3
+          class="text-[#012e4a] text-[18px] mb-1 font-bold hover:text-[#FF6500]"
+        >
+          <a href=""
+            >The Hidden Mystrey <br />
+            Behind</a
+          >
+        </h3>
+        <ul class="flex justify-start mt-3">
+          <li class="text-[16px] font-bold text-[#FF6500]">$29.00</li>
+        </ul>
+        <ul class="flex items-center justify-between mt-4">
+          <li class="flex items-center gap-3">
+            <span><img src="client-1.png" alt="" /></span>
+            <span class="font-medium text-sm">Hawkins</span>
+          </li>
+          <li>
+            <i class="fa-solid fa-star text-[#FF6500]"></i>
+            <i class="fa-solid fa-star text-[#FF6500]"></i>
+            <i class="fa-solid fa-star text-[#FF6500]"></i>
+            <i class="fa-solid fa-star text-[#FF6500]"></i>
+            <i class="fa-regular fa-star text-[#FF6500]"></i>
+          </li>
+        </ul>
+      </div>
+      <div class="btn mt-8">
+        <a
+          href=""
+          class="flex justify-center items-center py-[20px] px-[40px] rounded-[100px] font-bold text-base bg-[#d0e1e7] text-[#036280] hover:bg-[#FF6500] hover:text-white"
+          ><i class="fa-solid fa-basket-shopping"></i>Add To Cart</a
+        >
+      </div>
+    </div>
+
+    <div class="s w-[352px]">
+      <div class="swrapper w-full">
+        <div class="second bg-[#f5f5f5] rounded-xl">
+          <div class="card2">
+            <div class="img p-[30px] flex justify-center">
+              <img src="02.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="content mt-5 text-[#4f536c] text-base font-normal">
+        <h5 class="mb-1">Design Low Book</h5>
+        <h3
+          class="text-[#012e4a] text-[18px] mb-1 font-bold hover:text-[#FF6500]"
+        >
+          <a href=""
+            >The Hidden Mystrey <br />
+            Behind</a
+          >
+        </h3>
+        <ul class="flex justify-start mt-3">
+          <li class="text-[16px] font-bold text-[#FF6500]">$29.00</li>
+        </ul>
+        <ul class="flex items-center justify-between mt-4">
+          <li class="flex items-center gap-3">
+            <span><img src="client-1.png" alt="" /></span>
+            <span class="font-medium text-sm">Hawkins</span>
+          </li>
+          <li>
+            <i class="fa-solid fa-star text-[#FF6500]"></i>
+            <i class="fa-solid fa-star text-[#FF6500]"></i>
+            <i class="fa-solid fa-star text-[#FF6500]"></i>
+            <i class="fa-solid fa-star text-[#FF6500]"></i>
+            <i class="fa-regular fa-star text-[#FF6500]"></i>
+          </li>
+        </ul>
+      </div>
+      <div class="btn mt-8">
+        <a
+          href=""
+          class="flex justify-center items-center py-[20px] px-[40px] rounded-[100px] font-bold text-base bg-[#d0e1e7] text-[#036280] hover:bg-[#FF6500] hover:text-white"
+          ><i class="fa-solid fa-basket-shopping"></i>Add To Cart</a
+        >
+      </div>
+    </div>
+
+    <div class="t w-[352px]">
+      <div class="swrapper w-full">
+        <div class="third bg-[#f5f5f5] rounded-xl">
+          <div class="card3">
+            <div class="img p-[30px] flex justify-center">
+              <img src="03.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="content mt-4 text-[#4f536c] text-base font-normal">
+        <h5 class="mb-0">Design Low Book</h5>
+        <h3
+          class="text-[#012e4a] text-[18px] mb-1 font-bold hover:text-[#FF6500]"
+        >
+          <a href=""
+            >The Hidden Mystrey <br />
+            Behind</a
+          >
+        </h3>
+        <ul class="flex justify-start mt-3">
+          <li class="text-[16px] font-bold text-[#FF6500]">$29.00</li>
+        </ul>
+        <ul class="flex items-center justify-between mt-4">
+          <li class="flex items-center gap-3">
+            <span><img src="client-1.png" alt="" /></span>
+            <span class="font-medium text-sm">Hawkins</span>
+          </li>
+          <li>
+            <i class="fa-solid fa-star text-[#FF6500]"></i>
+            <i class="fa-solid fa-star text-[#FF6500]"></i>
+            <i class="fa-solid fa-star text-[#FF6500]"></i>
+            <i class="fa-solid fa-star text-[#FF6500]"></i>
+            <i class="fa-regular fa-star text-[#FF6500]"></i>
+          </li>
+        </ul>
+      </div>
+      <div class="btn mt-8">
+        <a
+          href=""
+          class="flex justify-center items-center py-[20px] px-[40px] rounded-[100px] font-bold text-base bg-[#d0e1e7] text-[#036280] hover:bg-[#FF6500] hover:text-white"
+          ><i class="fa-solid fa-basket-shopping"></i>Add To Cart</a
+        >
+      </div>
+    </div>
+  </div>
+
+
+  <div class="testimonial">
+    <div class="container w-[80%] mx-auto pb-[100px]">
+      <div class="title relative">
+        <h2 class="text-[40px] font-bold text-[#012e4a]">What our client say</h2>
+      </div>
+        <div class="main bg-[#fafafa] shadow-xl p-2 flex gap-10">
+          <div class="left w-[543px] p-[40px] bg-[#ffff]">
+            <div class="leftcard">
+              <div class="mb-8">
+              <p class="font-medium text-[#4f536c]">
+                "The Art of Possibility" by Rosamund Stone Zander and Benjamin Zander is a
+                transformative read that challenges conventional thinking and opens up new
+                possibilities. As a reader, I found myself profoundly .
+              </p>
+              </div>
+              <div class="client flex items-center justify-between">
+                <div class="cinfo flex gap-3">
+                  <div class="h-[70px] w-[70px] relative" ><img src="bg01.jpg" alt="" class="rounded-full">
+                    <div class="v absolute left-[-40px] bottom-[-35px]"><img src="vshape.svg" alt=""></div>
+                  </div>
+                  <div class="content">
+                    <h3 class="text-[#121315] font-semibold text-[20px]">Ronald Richards</h3>
+                    <span class="text-[#4f536c] font-normal text-[16px]">Marketing Coordinator</span>
+                    <div class="star text-[#FF6500]">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                </div>
+                </div>
+                <div><img src="envato.png" alt=""></div>
+              </div>
+            </div>
+            
+          </div>
+          <div class="right w-[543px] p-[40px] bg-[#ffff]">
+            <div class="rightcard">
+              <div class="mb-8">
+              <p class="font-medium text-[#4f536c]">
+                "The Art of Possibility" by Rosamund Stone Zander and Benjamin Zander is a
+                transformative read that challenges conventional thinking and opens up new
+                possibilities. As a reader, I found myself profoundly .
+              </p>
+              </div>
+              <div class="client flex items-center justify-between">
+                <div class="cinfo flex gap-3">
+                  <div class="h-[70px] w-[70px] relative" ><img src="bg01.jpg" alt="" class="rounded-full">
+                    <div class="v absolute left-[-40px] bottom-[-35px]"><img src="vshape.svg" alt=""></div>
+                  </div>
+                  <div class="content">
+                    <h3 class="text-[#121315] font-semibold text-[20px]">Ronald Richards</h3>
+                    <span class="text-[#4f536c] font-normal text-[16px]">Marketing Coordinator</span>
+                    <div class="star text-[#FF6500]">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                </div>
+                </div>
+                <div><img src="envato.png" alt=""></div>
+              </div>
+            </div>
+            
+          </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="team flex justify-center">
+    <div class="container w-[80%] mx-auto pb-[100px] bg-[#fafafa]">
+      <div class="title text-center">
+        <h2 class="font-bold text-[40px] text-[#012e4a]">Featured Author</h2>
+        <p class="text-[#4f536c] font-normal text-[16px] ">Interdum et malesuada fames ac ante ipsum primis in <br> Donec at nulla nulla. Duis posuere ex lacus</p>
+      </div>
+      <div class="swipper relative pt-[30px]">
+        <div class="leftarrow absolute top-[42%] left-[-30px] h-[65px] w-[65px] bg-[#036280] flex justify-center items-center text-white border-2 border-white rounded-full hover:bg-[#FF6650] cursor-pointer"><i class="fa-solid fa-arrow-left"></i></div>
+      <div class="leftarrow absolute top-[42%] right-[-30px] h-[65px] w-[65px] bg-[#036280] flex justify-center items-center text-white border-2 border-white rounded-full hover:bg-[#FF6650] cursor-pointer"><i class="fa-solid fa-arrow-right"></i></div>
+        <div class="wrapper flex gap-2 justify-center flex-wrap md:flex-nowrap">
+          <div class="slide1 w-[256.5px]">
+            <div class="box py-[30px] px-[20px] bg-white flex flex-col gap-12 rounded-lg">
+              <div class="timg relative">
+                <div class="thumb flex justify-center"><img src="bg02.jpg" alt=""></div>
+                <div class="absolute top-0 left-[30px]"><img src="shape-img.png" alt=""></div>
+              </div>
+              <div class="content py-[20px] px-[15px] text-center border-[1.9px] border-dashed border-[#036280] rounded-lg flex flex-col gap-3">
+                <h6 class="text-[#012e4a] cursor-pointer font-semibold text-[16px]">Kawser Ahmed</h6>
+                <p class="font-medium text-[12px] text-[#4f536c]">04 Published Books</p>
+              </div>
+            </div>
+          </div>
+          <div class="slide2 w-[256.5px]">
+            <div class="box py-[30px] px-[20px] bg-white flex flex-col gap-12 rounded-lg">
+              <div class="timg relative">
+                <div class="thumb flex justify-center"><img src="bg07.jpg" alt=""></div>
+                <div class="absolute top-0 left-[30px]"><img src="shape-img.png" alt=""></div>
+              </div>
+              <div class="content py-[20px] px-[15px] text-center border-[1.9px] border-dashed border-[#036280] rounded-lg flex flex-col gap-3">
+                <h6 class="text-[#012e4a] cursor-pointer font-semibold text-[16px]">Kawser Ahmed</h6>
+                <p class="font-medium text-[12px] text-[#4f536c]">04 Published Books</p>
+              </div>
+            </div>
+          </div>
+          <div class="slide3 w-[256.5px]">
+            <div class="box py-[30px] px-[20px] bg-white flex flex-col gap-12 rounded-lg">
+              <div class="timg relative">
+                <div class="thumb flex justify-center"><img src="bg08.jpg" alt=""></div>
+                <div class="absolute top-0 left-[30px]"><img src="shape-img.png" alt=""></div>
+              </div>
+              <div class="content py-[20px] px-[15px] text-center border-[1.9px] border-dashed border-[#036280] rounded-lg flex flex-col gap-3">
+                <h6 class="text-[#012e4a] cursor-pointer font-semibold text-[16px]">Kawser Ahmed</h6>
+                <p class="font-medium text-[12px] text-[#4f536c]">04 Published Books</p>
+              </div>
+            </div>
+          </div>
+          <div class="slide4 w-[256.5px]">
+            <div class="box py-[30px] px-[20px] bg-white flex flex-col gap-12 rounded-lg">
+              <div class="timg relative">
+                <div class="thumb flex justify-center"><img src="bg09.jpg" alt=""></div>
+                <div class="absolute top-0 left-[30px]"><img src="shape-img.png" alt=""></div>
+              </div>
+              <div class="content py-[20px] px-[15px] text-center border-[1.9px] border-dashed border-[#036280] rounded-lg flex flex-col gap-3">
+                <h6 class="text-[#012e4a] cursor-pointer font-semibold text-[16px]">Kawser Ahmed</h6>
+                <p class="font-medium text-[12px] text-[#4f536c]">04 Published Books</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="news py-[100px] bg-[#d0e1e7]">
+    <div class="container w-[80%] mx-auto">
+      <div class="title flex flex-col gap-2 relative text-center">
+        <h2 class="text-[40px] font-bold text-[#012e4a]">Our Latest News</h2>
+        <p class="font-normal text-[16px] text-[#4f536c]">Interdum et malesuada fames ac ante ipsum primis in <br>
+          Donec at nulla nulla. Duis posuere ex lacus</p>
+      </div>
+      <div class="row pt-[40px] flex flex-wrap gap-6 md:flex-nowrap justify-center md:justify-normal">
+        <div class="card md:w-[25%] w-[50%]">
+          <div class="items bg-white rounded-2xl border-[1px] border-[#5c707e33] p-6">
+            <div class="img relative">
+              <img src="bg03.jpg" alt="">
+              <div class="text-white font-normal cursor-pointer text-[16px] bg-[#036280] py-[10px] px-[12px] text-center rounded-lg w-[100px] absolute top-4 left-4">Activities</div>
+            
+            </div>
+            <div class="content p-[20px] flex flex-col gap-4">
+              <ul class="flex justify-between">
+                <li class="text-[#4f536c] text-[16px] font-normal">
+                  <i class="fa-regular fa-calendar-days"></i>Feb 10,<br> 2024      
+                </li>
+                <li class="text-[#4f536c] text-[16px] font-normal">
+                  <i class="fa-regular fa-user"></i>By<br>Admin      
+                </li>
+              </ul>
+              <h3 class="text-[#012e4a] font-bold text-[18px]"><a href="">Montes suspendisse massa curae malesuada</a></h3>
+              <a href="" class="text-[#4f536c] font-semibold text-[16px]">Read More <i class="fa-solid fa-arrow-right-long"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="card md:w-[25%] w-[50%] ">
+          <div class="items bg-white rounded-2xl border-[1px] border-[#5c707e33] p-6">
+            <div class="img relative">
+              <img src="bg04.jpg" alt="">
+              <div class="text-white font-normal cursor-pointer text-[16px] bg-[#036280] py-[10px] px-[12px] text-center rounded-lg w-[100px] absolute top-4 left-4">Activities</div>
+            
+            </div>
+            <div class="content p-[20px] flex flex-col gap-4">
+              <ul class="flex justify-between">
+                <li class="text-[#4f536c] text-[16px] font-normal">
+                  <i class="fa-regular fa-calendar-days"></i>Feb 10,<br> 2024      
+                </li>
+                <li class="text-[#4f536c] text-[16px] font-normal">
+                  <i class="fa-regular fa-user"></i>By<br>Admin      
+                </li>
+              </ul>
+              <h3 class="text-[#012e4a] font-bold text-[18px]"><a href="">Montes suspendisse massa curae malesuada</a></h3>
+              <a href="" class="text-[#4f536c] font-semibold text-[16px]">Read More <i class="fa-solid fa-arrow-right-long"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="card md:w-[25%] w-[50%]">
+          <div class="items bg-white rounded-2xl border-[1px] border-[#5c707e33] p-6">
+            <div class="img relative">
+              <img src="bg05.jpg" alt="">
+              <div class="text-white font-normal cursor-pointer text-[16px] bg-[#036280] py-[10px] px-[12px] text-center rounded-lg w-[100px] absolute top-4 left-4">Activities</div>
+            
+            </div>
+            <div class="content p-[20px] flex flex-col gap-4">
+              <ul class="flex justify-between">
+                <li class="text-[#4f536c] text-[16px] font-normal">
+                  <i class="fa-regular fa-calendar-days"></i>Feb 10,<br> 2024      
+                </li>
+                <li class="text-[#4f536c] text-[16px] font-normal">
+                  <i class="fa-regular fa-user"></i>By<br>Admin      
+                </li>
+              </ul>
+              <h3 class="text-[#012e4a] font-bold text-[18px]"><a href="">Montes suspendisse massa curae malesuada</a></h3>
+              <a href="" class="text-[#4f536c] font-semibold text-[16px]">Read More <i class="fa-solid fa-arrow-right-long"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="card md:w-[25%] w-[50%]">
+          <div class="items bg-white rounded-2xl border-[1px] border-[#5c707e33] p-6">
+            <div class="img relative">
+              <img src="bg06.jpg" alt="">
+              <div class="text-white font-normal cursor-pointer text-[16px] bg-[#036280] py-[10px] px-[12px] text-center rounded-lg w-[100px] absolute top-4 left-4">Activities</div>
+            
+            </div>
+            <div class="content p-[20px] flex flex-col gap-4">
+              <ul class="flex justify-between">
+                <li class="text-[#4f536c] text-[16px] font-normal">
+                  <i class="fa-regular fa-calendar-days"></i>Feb 10,<br> 2024      
+                </li>
+                <li class="text-[#4f536c] text-[16px] font-normal">
+                  <i class="fa-regular fa-user"></i>By<br>Admin      
+                </li>
+              </ul>
+              <h3 class="text-[#012e4a] font-bold text-[18px]"><a href="">Montes suspendisse massa curae malesuada</a></h3>
+              <a href="" class="text-[#4f536c] font-semibold text-[16px]">Read More <i class="fa-solid fa-arrow-right-long"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer bg-[#012e4a]">
+    <div class="container w-[80%] mx-auto">
+      <div class="cinfo flex items-center pt-[80px] pb-[50px] justify-start gap-[40px] flex-wrap border-b-[1px] border-[#ffffff33]">
+        <div class="items flex gap-5">
+          <div class="icon flex justify-center items-center w-[65px] h-[65px] border-[2px] border-white border-dotted rounded-full "><i class="fa-solid fa-phone text-white"></i></div>
+          <div class="content text-white flex flex-col gap-2"><p class="font-normal text-[16px]">Call Us 7/24</p><h3 class="font-bold text-[24px]">+208-555-0112</h3></div>
+        </div>
+        <div class="items flex gap-5">
+          <div class="icon flex justify-center items-center w-[65px] h-[65px] border-[2px] border-white border-dotted rounded-full "><i class="fa-solid fa-envelope text-white"></i></div>
+          <div class="content text-white flex flex-col gap-2"><p class="font-normal text-[16px]">Make a Quote</p><h3 class="font-bold text-[24px]">example@gmail.com</h3></div>
+        </div>
+        <div class="items flex gap-5">
+          <div class="icon flex justify-center items-center w-[65px] h-[65px] border-[2px] border-white border-dotted rounded-full "><i class="fa-solid fa-bolt text-white"></i></div>
+          <div class="content text-white flex flex-col gap-2"><p class="font-normal text-[16px]">Opening Hour</p><h3 class="font-bold text-[24px]">Sunday - Fri: 9 aM - 6 pM</h3></div>
+        </div>
+        <div class="items flex gap-5">
+          <div class="icon flex justify-center items-center w-[65px] h-[65px] border-[2px] border-white border-dotted rounded-full "><i class="fa-solid fa-location-dot text-white"></i></div>
+          <div class="content text-white flex flex-col gap-2"><p class="font-normal text-[16px]">Location</p><h3 class="font-bold text-[24px]">4517 Washington ave.</h3></div>
+        </div>
+      </div>
+    </div>
+    <div class="fm pt-[90px] pb-[120px] relative">
+      <div class="bob absolute bottom-0 animate-moveTopBottom"><img src="plane-shape.png" alt=""></div>
+      <div class="container w-[80%] mx-auto">
+        <div class="row flex items-center justify-start gap-10 flex-wrap md:flex-nowrap">
+          <div class="col1 w-[25%]">
+            <div class="sf flex flex-col gap-6">
+              <div class="head">
+                <a href=""><img src="logo.svg" alt=""></a>
+              </div>
+              <div class="foot flex flex-col gap-10">
+                <p class="text-[#ffffffd9] text-[16px] font-normal">
+                  Phasellus ultricies aliquam volutpat ullamcorper laoreet neque, a lacinia curabitur
+                  lacinia mollis
+                </p>
+                <div class="icons flex text-white gap-[10px]">
+                  <a href="https://facebook.com" class="border-[1px] border-[#ffffff33] py-[5px] px-[10px] hover:bg-[#FF6500]"><i class="fab fa-facebook-f"></i></a>
+                  <a href="https://twitter.com/" class="border-[1px] border-[#ffffff33] py-[5px] px-[10px] hover:bg-[#FF6500]"><i class="fab fa-twitter"></i></a>
+                  <a href="https://www.youtube.com/" class="border-[1px] border-[#ffffff33] py-[5px] px-[10px] hover:bg-[#FF6500]"><i class="fab fa-youtube"></i></a>
+                  <a href="https://www.linkedin.com/" class="border-[1px] border-[#ffffff33] py-[5px] px-[10px] hover:bg-[#FF6500]"><i class="fab fa-linkedin-in"></i></a>
+
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col2 w-[25%]">
+            <div class="sf flex flex-col gap-6">
+              <div class="head">
+                <h3 class="text-[24px] text-white font-bold">Costumers <br> Support</h3>
+              </div>
+              <ul class="text-white font-medium text-[16px] flex flex-col gap-3">
+                <li>
+                  <a href="" class="transition-transform duration-[0.4s] ease-in-out transform hover:translate-x-5 hover:text-[#FF6500] flex items-center gap-3"><i class="fa-solid fa-angles-right"></i><span>Store List</span></a>
+                </li>
+                <li>
+                  <a href="" class="transition-transform duration-[0.4s] ease-in-out transform hover:translate-x-5 hover:text-[#FF6500] flex items-center gap-3"><i class="fa-solid fa-angles-right"></i><span>Opening Hours</span></a>
+                </li>
+                <li>
+                  <a href="" class="transition-transform duration-[0.4s] ease-in-out transform hover:translate-x-5 hover:text-[#FF6500] flex items-center gap-3"><i class="fa-solid fa-angles-right"></i><span>Contact Us</span></a>
+                </li>
+                <li>
+                  <a href="" class="transition-transform duration-[0.4s] ease-in-out transform hover:translate-x-5 hover:text-[#FF6500] flex items-center gap-3"><i class="fa-solid fa-angles-right"></i><span>Return Policy</span></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col3 w-[25%]">
+            <div class="sf flex flex-col gap-6">
+              <div class="head">
+                <h3 class="text-[24px] text-white font-bold">Categories</h3>
+              </div>
+              <ul class="text-white font-medium text-[16px] flex flex-col gap-3">
+                <li>
+                  <a href="" class="transition-transform duration-[0.4s] ease-in-out transform hover:translate-x-5 hover:text-[#FF6500] flex items-center gap-3"><i class="fa-solid fa-angles-right"></i><span>Novel Books</span></a>
+                </li>
+                <li>
+                  <a href="" class="transition-transform duration-[0.4s] ease-in-out transform hover:translate-x-5 hover:text-[#FF6500] flex items-center gap-3"><i class="fa-solid fa-angles-right"></i><span>Poetry Books</span></a>
+                </li>
+                <li>
+                  <a href="" class="transition-transform duration-[0.4s] ease-in-out transform hover:translate-x-5 hover:text-[#FF6500] flex items-center gap-3"><i class="fa-solid fa-angles-right"></i><span>Political Books</span></a>
+                </li>
+                <li>
+                  <a href="" class="transition-transform duration-[0.4s] ease-in-out transform hover:translate-x-5 hover:text-[#FF6500] flex items-center gap-3"><i class="fa-solid fa-angles-right"></i><span>History Books</span></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col4 w-[25%]">
+            <div class="sf flex flex-col gap-6">
+              <div class="head">
+                <h3 class="text-[24px] text-white font-bold">Newsletter</h3>
+              </div>
+              <div class="footer flex flex-col gap-6">
+                <p class="text-[#ffffffd9] text-[16px] font-normal">
+                  Sign up to searing weekly newsletter to get the latest updates.
+                </p>
+                <div class="finput relative">
+                  <input type="email" placeholder="Enter Email Address" class="text-white py-[18px] px-[20px] bg-transparent border-[1px] border-[#ffffff4d] rounded-lg">
+                  <button class="absolute md:right-[10px] top-2 text-white bg-[#036280] h-[45px] w-[50px] rounded-md right-[-85px]"><i class="fa-regular fa-paper-plane"></i></button>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer_bottom bg-[#036280] py-[18px]">
+      <div class="container mx-auto w-[80%]">
+        <div class="wrapper flex justify-between items-center">
+          <p class="text-white font-normal text-[16px]">© All Copyright 2024 by Bookle</p>
+          <ul class="flex gap-2 items-center">
+            <li class="border-[1px] border-[#ffffff80] py-[10px] px-[12px] rounded-md"><a href=""><img src="visa-logo.png" alt=""></a></li>
+            <li class="border-[1px] border-[#ffffff80] py-[10px] px-[12px] rounded-md"><a href=""><img src="mastercard.png" alt=""></a></li>
+            <li class="border-[1px] border-[#ffffff80] py-[10px] px-[12px] rounded-md"><a href=""><img src="payoneer.png" alt=""></a></li>
+            <li class="border-[1px] border-[#ffffff80] py-[10px] px-[12px] rounded-md"><a href=""><img src="affirm.png" alt=""></a></li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  </body>
+</html>
