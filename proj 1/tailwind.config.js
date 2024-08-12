@@ -44,8 +44,9 @@ module.exports = {
         slideOut: 'slideOut 0.3s forwards',
       },
       screens:{
+        'xm':{'min': '400px', 'max': '600px'},
         'sm': '640px',
-        'md': '768px',
+        'md': '769px',
         'lg': '1024px',
         'xl': '1280px',
 
