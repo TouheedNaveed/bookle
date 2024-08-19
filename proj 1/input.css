@@ -4,3 +4,9 @@
 .h1{
     font-family: 'Moon Dance';;
 }
+.submenu {
+    transition: max-height 0.3s ease-in-out;
+    overflow: hidden;
+    max-height: 0; /* Initially collapsed */
+}
+  
